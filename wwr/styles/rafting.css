@@ -1,0 +1,220 @@
+/* ==============================
+   White Water Rafting - Contact Page
+   Author: Elianu Pius
+   ============================== */
+
+/* ---- CSS Variables ---- */
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent-color: #94d2bd;
+    --light-bg: #f0fdfd;
+    --dark-text: #001219;
+    --light-text: #ffffff;
+    --border-radius: 8px;
+}
+
+/* ---- General Reset ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* ---- Header ---- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+header nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: var(--accent-color);
+}
+
+/* ---- Main ---- */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ---- Company Info Section ---- */
+.company-info {
+    background: var(--accent-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+.company-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.company-info iframe {
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+}
+
+/* ---- Team Section ---- */
+.team {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team figure {
+    display: inline-block;
+    margin: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* ---- Contact Form ---- */
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    margin-top: 0.3rem;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+/* ---- Footer ---- */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .socialmedia a {
+    margin: 0 0.5rem;
+}
+
+footer .socialmedia img {
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+    transform: scale(1.1);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .team figure {
+        display: block;
+        margin: 1.5rem auto;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
